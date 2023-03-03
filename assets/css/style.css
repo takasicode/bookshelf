@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #ececec;
+}
+
+header {
+  width: 100%;
+  padding: 15px 24px;
+  position: sticky;
+  background-color: #1a374d;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.nav .searchIcon {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav .searchBox {
+  position: absolute;
+  right: 70px;
+  height: 35px;
+  max-width: 555px;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s linear;
+}
+
+.nav.openSearch .searchBox {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.searchBox .searchIcon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  left: 15px;
+  color: #1a374d;
+  transform: translateY(-50%);
+}
+
+.searchBox input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 0 15px 0 45px;
+}
+
+main {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.layoutLeft {
+  flex: 0 600px;
+  margin: 0 12px 0 12px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.input_section {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.input_section > h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #1a374d;
+  font-size: 1.5em;
+}
+
+.input_section > form > .input {
+  margin: 20px 0;
+}
+
+.input_section > form > button {
+  background-color: darkred;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.input_section > form > button:hover {
+  background-color: darkgreen;
+  transition: all 0.2s linear;
+}
+
+.input_section > form > button > span {
+  font-weight: bold;
+}
+
+.input_section > form > .input > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.input_section > form > .input > label {
+  color: #000;
+}
+
+.input_section > form > .input_inline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+  color: #000;
+  margin-right: 10px;
+}
+
+.layoutRight {
+  flex: 1 200px;
+  margin: 0px 12px 0 12px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.book_shelf {
+  margin: 0 0 12px 0;
+  /* border: 1px solid black; */
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.book_shelf > h2 {
+  margin-bottom: 15px;
+  color: #1a374d;
+  font-size: 1.5em;
+}
+
+.book_shelf > .book_list {
+  padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+  padding: 8px 16px 16px 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3 {
+  margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > p {
+  color: #1a374d;
+  opacity: 0.8;
+  font-size: 1em;
+  margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+  border: 0;
+  padding: 5px;
+  margin: 0 5px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+  background-color: darkgreen;
+  color: white;
+  border-radius: 5px;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green:hover {
+  background-color: rgb(22, 133, 22);
+  transition: all 0.2s linear;
+  color: white;
+  border-radius: 5px;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+  background-color: darkred;
+  color: white;
+  border-radius: 5px;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red:hover {
+  background-color: rgb(201, 15, 15);
+  transition: all 0.2s linear;
+  color: white;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1160px) {
+  header {
+    padding: 15px 100px;
+  }
+
+  .nav .searchBox {
+    right: 150px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  header {
+    padding: 15px 50px;
+  }
+
+  .nav .searchBox {
+    right: 100px;
+    max-width: 400px;
+  }
+
+  .layoutLeft {
+    flex: 0 400px;
+    margin: 0 12px 0 12px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+
+  .layoutRight {
+    flex: 1 200px;
+    margin: 15px 12px 0 12px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  .nav .searchBox {
+    top: calc(100% + 10px);
+    max-width: calc(100% - 20px);
+    right: 50%;
+    transform: translateX(50%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  main {
+    flex-direction: column;
+  }
+}
