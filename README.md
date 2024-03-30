@@ -1,4 +1,4 @@
-# Landing Page
+# Bookshelf
 Submission: Aplikasi Pengelolaan Data Menggunakan DOM dan Web Storage pada kelas Belajar Membuat Front-End Web untuk Pemula
 
 #### Kriteria 1: Mampu Menambahkan Data Buku
@@ -59,5 +59,5 @@ Untuk id buku pada tiap buku yang disimpan haruslah unik. Tips dalam menetapkan 
 ![App Screenshot](./assets/images/screenshot/screencapture.png)
 
 ## Tech Stack
-[![My Skills](https://skillicons.dev/icons?i=html,css,bootstrap,js)](https://github.com/takasicode/bookshelf)
+[![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://github.com/takasicode/bookshelf)
  
